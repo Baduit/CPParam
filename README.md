@@ -1,5 +1,5 @@
 # CPParam
-A very short C++ header-only library to help you know if you have to pass a function's paramter by value (with a copy) or by constant reference.
+A very short C++ 11 header-only library to help you know if you have to pass a function's paramter by value (with a copy) or by constant reference.
 
 # The problem
 You can pass 3 types of parameter to a function:
@@ -62,6 +62,7 @@ void my_test_function(Param<std::string> str, Param<double> decimal)
 ```
 You just need to pass the type of your paramter as template parameter of the __Param__ class then you can use the parameter as usual.
 
+You can run the an example by compiling the file __src/main.cpp__ (with cmake or with the command "g++ src/main.cpp -std=c++14"), note this lib need only c++ 11 but the example need c++14.
 
 # How to install it?
 You just need to add the header file __Param.hpp__ located in the __src__ folder to your project.
